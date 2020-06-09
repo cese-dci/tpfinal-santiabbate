@@ -1,0 +1,24 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2N7002
+D 50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23
+K N-Channel MOSFET
+$ENDCMP
+#
+$CMP Ai-Thinker-Ra-01
+D Ai-Thinker LoRa Module Ra-01
+K Ra-01 LoRa
+F https://mikroelectron.com/Product/10KM-433M-LORA-LONG-RANGE-WIRELESS-MODULE-RA-01
+$ENDCMP
+#
+$CMP CP2102-GM-QFN28
+D USB to UART master bridge, QFN-28
+K USB UART bridge
+F https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf
+$ENDCMP
+#
+$CMP U.FL-R-SMT-1(10)
+F Manufacturer Recommendation
+$ENDCMP
+#
+#End Doc Library
