@@ -153,12 +153,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR042
 U 1 1 5ED8B990
-P 10000 2450
-F 0 "#PWR042" H 10000 2200 50  0001 C CNN
-F 1 "GND" H 10005 2277 50  0000 C CNN
-F 2 "" H 10000 2450 50  0001 C CNN
-F 3 "" H 10000 2450 50  0001 C CNN
-	1    10000 2450
+P 10000 2500
+F 0 "#PWR042" H 10000 2250 50  0001 C CNN
+F 1 "GND" H 10005 2327 50  0000 C CNN
+F 2 "" H 10000 2500 50  0001 C CNN
+F 3 "" H 10000 2500 50  0001 C CNN
+	1    10000 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -442,17 +442,6 @@ Wire Wire Line
 Wire Wire Line
 	8500 2000 8800 2000
 $Comp
-L tp_abbate:2N7002 Q2
-U 1 1 5EEE5CA7
-P 2450 4100
-F 0 "Q2" H 2654 4146 50  0000 L CNN
-F 1 "2N7002" H 2654 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363" H 2650 4025 50  0001 L CIN
-F 3 "" H 2450 4100 50  0001 L CNN
-	1    2450 4100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push SW1
 U 1 1 5EEE805E
 P 1200 3850
@@ -467,12 +456,8 @@ Wire Wire Line
 	1400 3850 2550 3850
 Wire Wire Line
 	2550 3850 2550 3900
-Text Label 1800 4100 0    50   ~ 0
-DTR
 Wire Wire Line
 	1800 4100 2100 4100
-Text Label 1800 4900 0    50   ~ 0
-RTS
 Wire Wire Line
 	1800 4900 2200 4900
 Wire Wire Line
@@ -486,17 +471,6 @@ Wire Wire Line
 	2200 4900 2250 4900
 Wire Wire Line
 	2550 5100 2550 5150
-$Comp
-L tp_abbate:2N7002 Q2
-U 2 1 5EEE69D9
-P 2450 4900
-F 0 "Q2" H 2654 4854 50  0000 L CNN
-F 1 "2N7002" H 2654 4945 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363" H 2650 4825 50  0001 L CIN
-F 3 "" H 2450 4900 50  0001 L CNN
-	2    2450 4900
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	2550 4700 2550 4500
 Wire Wire Line
@@ -781,7 +755,7 @@ Wire Wire Line
 Wire Wire Line
 	1200 2200 1200 2150
 Wire Wire Line
-	4700 1700 5250 1700
+	4700 1700 5000 1700
 Wire Wire Line
 	3850 2450 3900 2450
 Connection ~ 3850 2450
@@ -1603,4 +1577,75 @@ F 3 "" H 9350 4550 50  0001 C CNN
 $EndComp
 Text Notes 4050 2900 0    50   ~ 0
 Close to\nboard edge.\nBattery connector
+NoConn ~ 1550 1350
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EE18886
+P 5000 1600
+F 0 "#FLG0101" H 5000 1675 50  0001 C CNN
+F 1 "PWR_FLAG" H 5000 1773 50  0000 C CNN
+F 2 "" H 5000 1600 50  0001 C CNN
+F 3 "~" H 5000 1600 50  0001 C CNN
+	1    5000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1600 5000 1700
+Connection ~ 5000 1700
+Wire Wire Line
+	5000 1700 5250 1700
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EE25AE8
+P 3500 750
+F 0 "#FLG0102" H 3500 825 50  0001 C CNN
+F 1 "PWR_FLAG" H 3500 923 50  0000 C CNN
+F 2 "" H 3500 750 50  0001 C CNN
+F 3 "~" H 3500 750 50  0001 C CNN
+	1    3500 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 750  3500 950 
+Wire Wire Line
+	9900 2400 9900 2450
+Wire Wire Line
+	9900 2450 10000 2450
+Connection ~ 10000 2450
+Wire Wire Line
+	10000 2450 10000 2500
+Text Notes 1750 3550 0    50   ~ 0
+Reset button
+Wire Notes Line
+	1350 3800 1750 3550
+Wire Notes Line
+	1300 5200 1500 5350
+Text Label 1800 4100 0    50   ~ 0
+DTR
+$Comp
+L tp_abbate:2N7002 Q2
+U 2 1 5EEE69D9
+P 2450 4900
+F 0 "Q2" H 2654 4854 50  0000 L CNN
+F 1 "2N7002" H 2654 4945 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363" H 2650 4825 50  0001 L CIN
+F 3 "" H 2450 4900 50  0001 L CNN
+	2    2450 4900
+	1    0    0    1   
+$EndComp
+Text Label 1800 4900 0    50   ~ 0
+RTS
+$Comp
+L tp_abbate:2N7002 Q2
+U 1 1 5EEE5CA7
+P 2450 4100
+F 0 "Q2" H 2654 4146 50  0000 L CNN
+F 1 "2N7002" H 2654 4055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363" H 2650 4025 50  0001 L CIN
+F 3 "" H 2450 4100 50  0001 L CNN
+	1    2450 4100
+	1    0    0    -1  
+$EndComp
+Text Notes 1500 5450 0    50   ~ 0
+Flash button: Driving GPIO0 LOW while\nreset, enters Flash mode 
 $EndSCHEMATC
