@@ -1,0 +1,1043 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title "Rework Heltec Wifi_Lora_32: Microcontroller and Outputs"
+Date "2020-06-18"
+Rev "1.1"
+Comp "UNRN"
+Comment1 "Dibujó: Santiago Abbate"
+Comment2 "Revisó: Diego Essaya, Diego Brengi"
+Comment3 "CESE - FIUBA - Trabajo Práctico - Diseño de Circuitos Impresos"
+Comment4 "Licencia CC-BY 4.0"
+$EndDescr
+Text Notes 5000 1150 0    100  ~ 20
+ESP32
+Wire Wire Line
+	4700 6800 4700 6750
+Wire Wire Line
+	4700 6750 4900 6750
+Connection ~ 4700 6750
+$Comp
+L power:GND #PWR0209
+U 1 1 5EEF44E1
+P 4700 6800
+F 0 "#PWR0209" H 4700 6550 50  0001 C CNN
+F 1 "GND" H 4705 6627 50  0000 C CNN
+F 2 "" H 4700 6800 50  0001 C CNN
+F 3 "" H 4700 6800 50  0001 C CNN
+	1    4700 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 6350 4900 6350
+Connection ~ 4700 6350
+Wire Wire Line
+	4700 6300 4700 6350
+$Comp
+L power:+3.3V #PWR0208
+U 1 1 5EEF44EA
+P 4700 6300
+F 0 "#PWR0208" H 4700 6150 50  0001 C CNN
+F 1 "+3.3V" H 4715 6473 50  0000 C CNN
+F 2 "" H 4700 6300 50  0001 C CNN
+F 3 "" H 4700 6300 50  0001 C CNN
+	1    4700 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6750 4900 6700
+Wire Wire Line
+	4500 6750 4700 6750
+Wire Wire Line
+	4500 6700 4500 6750
+Wire Wire Line
+	4900 6350 4900 6400
+Wire Wire Line
+	4500 6350 4700 6350
+Wire Wire Line
+	4500 6400 4500 6350
+$Comp
+L Device:C C204
+U 1 1 5EEF44F6
+P 4900 6550
+F 0 "C204" H 4950 6750 50  0000 L CNN
+F 1 "100nF" H 4950 6650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4938 6400 50  0001 C CNN
+F 3 "~" H 4900 6550 50  0001 C CNN
+F 4 "0.1µF -20%, +80% 50V Ceramic Capacitor Y5V (F) 0805 (2012 Metric)" H 4900 6550 50  0001 C CNN "Desc"
+F 5 "399-1177-1-ND" H 4900 6550 50  0001 C CNN "Digikey#"
+F 6 "KEMET" H 4900 6550 50  0001 C CNN "Manf"
+	1    4900 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C203
+U 1 1 5EEF44FC
+P 4500 6550
+F 0 "C203" H 4150 6750 50  0000 L CNN
+F 1 "22uF" H 4150 6650 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 4500 6550 50  0001 C CNN
+F 3 "~" H 4500 6550 50  0001 C CNN
+F 4 "22µF Molded Tantalum Capacitors 6.3V 1206 (3216 Metric) 3Ohm @ 100kHz" H 4500 6550 50  0001 C CNN "Desc"
+F 5 "478-TAJA226K006SNJCT-ND" H 4500 6550 50  0001 C CNN "Digikey#"
+F 6 "AVX Corporation" H 4500 6550 50  0001 C CNN "Manf"
+	1    4500 6550
+	1    0    0    -1  
+$EndComp
+Text Notes 4000 6200 0    50   ~ 0
+Close to U201\nVDD pin\n
+Wire Wire Line
+	4100 2950 4600 2950
+Wire Wire Line
+	4100 2850 4600 2850
+Text Label 4100 2950 0    50   ~ 0
+SENSOR_VN
+Text Label 4100 2850 0    50   ~ 0
+SENSOR_VP
+Text Label 5900 4350 0    50   ~ 0
+GPIO35
+Text Label 5900 4250 0    50   ~ 0
+GPIO34
+Text Label 5900 4150 0    50   ~ 0
+GPIO33
+Text Label 5900 4050 0    50   ~ 0
+GPIO32
+Text Label 5900 3950 0    50   ~ 0
+GPIO26
+Text Label 5900 3850 0    50   ~ 0
+GPIO25
+Text Label 5900 3750 0    50   ~ 0
+GPIO23
+Text Label 5900 3650 0    50   ~ 0
+GPIO22
+Text Label 5900 3550 0    50   ~ 0
+GPIO21
+Text Label 5900 3450 0    50   ~ 0
+GPIO17
+Text Label 5900 3350 0    50   ~ 0
+GPIO16
+Text Label 5900 3250 0    50   ~ 0
+GPIO15
+Text Label 5900 3150 0    50   ~ 0
+GPIO13
+Text Label 5900 3050 0    50   ~ 0
+GPIO12
+Text Label 5900 2950 0    50   ~ 0
+GPIO4
+Text Label 5900 2850 0    50   ~ 0
+GPIO2
+$Comp
+L Device:C C201
+U 1 1 5EEF452B
+P 2600 2000
+F 0 "C201" H 2400 2050 50  0000 L CNN
+F 1 "100nF" H 2250 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2638 1850 50  0001 C CNN
+F 3 "~" H 2600 2000 50  0001 C CNN
+F 4 "0.1µF -20%, +80% 50V Ceramic Capacitor Y5V (F) 0805 (2012 Metric)" H 2600 2000 50  0001 C CNN "Desc"
+F 5 "399-1177-1-ND" H 2600 2000 50  0001 C CNN "Digikey#"
+F 6 "KEMET" H 2600 2000 50  0001 C CNN "Manf"
+	1    2600 2000
+	1    0    0    -1  
+$EndComp
+Text Label 4200 1750 0    50   ~ 0
+CHIP_PU
+Text Label 5900 2750 0    50   ~ 0
+GPIO0
+Wire Wire Line
+	5200 4600 5200 4550
+NoConn ~ 4600 3450
+NoConn ~ 4600 3350
+NoConn ~ 4600 3750
+NoConn ~ 4600 3650
+NoConn ~ 4600 3550
+NoConn ~ 4600 3850
+$Comp
+L tp_abbate:ESP32-WROOM-32 U201
+U 1 1 5EEF4541
+P 5200 2950
+F 0 "U201" H 4750 4300 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 5700 4300 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 5200 1450 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4900 3000 50  0001 C CNN
+F 4 "1904-1010-1-ND" H 5200 2950 50  0001 C CNN "Digikey#"
+F 5 "Espressif Systems" H 5200 2950 50  0001 C CNN "Manf"
+F 6 "RX TXRX MOD WIFI SURFACE MOUNT" H 5200 2950 50  0001 C CNN "Desc"
+	1    5200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2150 4000 2100
+$Comp
+L power:GND #PWR0207
+U 1 1 5EEF4548
+P 4000 2150
+F 0 "#PWR0207" H 4000 1900 50  0001 C CNN
+F 1 "GND" H 4005 1977 50  0000 C CNN
+F 2 "" H 4000 2150 50  0001 C CNN
+F 3 "" H 4000 2150 50  0001 C CNN
+	1    4000 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1350 4000 1400
+$Comp
+L power:+3.3V #PWR0206
+U 1 1 5EEF454F
+P 4000 1350
+F 0 "#PWR0206" H 4000 1200 50  0001 C CNN
+F 1 "+3.3V" H 4015 1523 50  0000 C CNN
+F 2 "" H 4000 1350 50  0001 C CNN
+F 3 "" H 4000 1350 50  0001 C CNN
+	1    4000 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 1750
+Wire Wire Line
+	4000 1700 4000 1750
+Wire Wire Line
+	4000 1750 4000 1800
+Wire Wire Line
+	4600 1750 4000 1750
+$Comp
+L power:GND #PWR0211
+U 1 1 5EEF455A
+P 5200 4600
+F 0 "#PWR0211" H 5200 4350 50  0001 C CNN
+F 1 "GND" H 5205 4427 50  0000 C CNN
+F 2 "" H 5200 4600 50  0001 C CNN
+F 3 "" H 5200 4600 50  0001 C CNN
+	1    5200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R205
+U 1 1 5EEF4564
+P 4000 1550
+F 0 "R205" H 3930 1504 50  0000 R CNN
+F 1 "10k" H 3930 1595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3930 1550 50  0001 C CNN
+F 3 "~" H 4000 1550 50  0001 C CNN
+	1    4000 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C202
+U 1 1 5EEF456A
+P 4000 1950
+F 0 "C202" H 4115 1996 50  0000 L CNN
+F 1 "10uF" H 4115 1905 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 4038 1800 50  0001 C CNN
+F 3 "~" H 4000 1950 50  0001 C CNN
+F 4 "10µF Molded Tantalum Capacitors 16V 0805 (2012 Metric) 4Ohm @ 100kHz" H 4000 1950 50  0001 C CNN "Desc"
+F 5 "478-F981C106MSUAJ6CT-ND" H 4000 1950 50  0001 C CNN "Digikey#"
+F 6 "AVX Corporation" H 4000 1950 50  0001 C CNN "Manf"
+	1    4000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1550 5200 1500
+$Comp
+L power:+3.3V #PWR0210
+U 1 1 5EEF4571
+P 5200 1500
+F 0 "#PWR0210" H 5200 1350 50  0001 C CNN
+F 1 "+3.3V" H 5215 1673 50  0000 C CNN
+F 2 "" H 5200 1500 50  0001 C CNN
+F 3 "" H 5200 1500 50  0001 C CNN
+	1    5200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EF01C50
+P 8100 3050
+AR Path="/5EF01C50" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5EF01C50" Ref="#PWR0215"  Part="1" 
+F 0 "#PWR0215" H 8100 2800 50  0001 C CNN
+F 1 "GND" H 8105 2877 50  0000 C CNN
+F 2 "" H 8100 3050 50  0001 C CNN
+F 3 "" H 8100 3050 50  0001 C CNN
+	1    8100 3050
+	1    0    0    -1  
+$EndComp
+Text Notes 9850 3600 0    100  ~ 20
+GPIOs Headers
+Text Notes 9300 1750 0    50   ~ 0
+Close to\nboard edge
+Wire Wire Line
+	8900 1750 9050 1750
+Wire Wire Line
+	8900 1800 8900 1750
+Wire Wire Line
+	8700 1650 9050 1650
+$Comp
+L power:GND #PWR?
+U 1 1 5EF01C70
+P 8900 1800
+AR Path="/5EF01C70" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5EF01C70" Ref="#PWR0217"  Part="1" 
+F 0 "#PWR0217" H 8900 1550 50  0001 C CNN
+F 1 "GND" H 8905 1627 50  0000 C CNN
+F 2 "" H 8900 1800 50  0001 C CNN
+F 3 "" H 8900 1800 50  0001 C CNN
+	1    8900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L tp_abbate:U.FL-R-SMT-1(10) J?
+U 1 1 5EF01C7C
+P 9150 1650
+AR Path="/5EF01C7C" Ref="J?"  Part="1" 
+AR Path="/5EED5E8D/5EF01C7C" Ref="J201"  Part="1" 
+F 0 "J201" H 9100 1950 50  0000 L CNN
+F 1 "U.FL-R-SMT-1(10)" H 9100 1850 50  0000 L CNN
+F 2 "U.FL:HRS_U.FL-R-SMT-1(10)" H 9150 1650 50  0001 L BNN
+F 3 "" H 9150 1650 50  0001 L BNN
+F 4 "U.FL Series 6 Ghz 50 Ohm Ultra-small SMT Coaxial Cable Receptacle" H 9150 1650 50  0001 L BNN "Desc"
+F 5 "H11891TR-ND" H 9150 1650 50  0001 C CNN "Digikey#"
+F 6 "Hirose" H 9150 1650 50  0001 C CNN "Manf"
+	1    9150 1650
+	1    0    0    -1  
+$EndComp
+Text Notes 7900 1100 0    100  ~ 20
+LoRa
+Text Notes 5750 6150 0    50   ~ 0
+Close to U202\n3v3 pin\n
+Wire Wire Line
+	6300 6350 6300 6300
+Wire Wire Line
+	6300 6800 6300 6650
+$Comp
+L power:GND #PWR?
+U 1 1 5EF01C86
+P 6300 6800
+AR Path="/5EF01C86" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5EF01C86" Ref="#PWR0213"  Part="1" 
+F 0 "#PWR0213" H 6300 6550 50  0001 C CNN
+F 1 "GND" H 6305 6627 50  0000 C CNN
+F 2 "" H 6300 6800 50  0001 C CNN
+F 3 "" H 6300 6800 50  0001 C CNN
+	1    6300 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EF01C8C
+P 6300 6300
+AR Path="/5EF01C8C" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5EF01C8C" Ref="#PWR0212"  Part="1" 
+F 0 "#PWR0212" H 6300 6150 50  0001 C CNN
+F 1 "+3.3V" H 6315 6473 50  0000 C CNN
+F 2 "" H 6300 6300 50  0001 C CNN
+F 3 "" H 6300 6300 50  0001 C CNN
+	1    6300 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5EF01C92
+P 6300 6500
+AR Path="/5EF01C92" Ref="C?"  Part="1" 
+AR Path="/5EED5E8D/5EF01C92" Ref="C205"  Part="1" 
+F 0 "C205" H 6415 6546 50  0000 L CNN
+F 1 "2.2uF" H 6415 6455 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 6300 6500 50  0001 C CNN
+F 3 "~" H 6300 6500 50  0001 C CNN
+F 4 "2.2µF Molded Tantalum Capacitors 10V 1206 (3216 Metric) 7Ohm @ 100kHz" H 6300 6500 50  0001 C CNN "Desc"
+F 5 "TAJA225M010SNJ" H 6300 6500 50  0001 C CNN "Digikey#"
+F 6 "AVX Corporation" H 6300 6500 50  0001 C CNN "Manf"
+	1    6300 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 5750 9300 5750
+Wire Wire Line
+	8500 5600 8500 5750
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EF01C9A
+P 8500 5600
+AR Path="/5EF01C9A" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5EF01C9A" Ref="#PWR0216"  Part="1" 
+F 0 "#PWR0216" H 8500 5450 50  0001 C CNN
+F 1 "+3.3V" H 8515 5773 50  0000 C CNN
+F 2 "" H 8500 5600 50  0001 C CNN
+F 3 "" H 8500 5600 50  0001 C CNN
+	1    8500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x12 J?
+U 1 1 5EF01CA0
+P 9500 5250
+AR Path="/5EF01CA0" Ref="J?"  Part="1" 
+AR Path="/5EED5E8D/5EF01CA0" Ref="J204"  Part="1" 
+F 0 "J204" H 9450 4500 50  0000 L CNN
+F 1 "Conn_01x12" H 9450 4400 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 9500 5250 50  0001 C CNN
+F 3 "~" H 9500 5250 50  0001 C CNN
+	1    9500 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 5850 9300 5850
+Wire Wire Line
+	9150 5900 9150 5850
+$Comp
+L power:GND #PWR?
+U 1 1 5EF01CA8
+P 9150 5900
+AR Path="/5EF01CA8" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5EF01CA8" Ref="#PWR0221"  Part="1" 
+F 0 "#PWR0221" H 9150 5650 50  0001 C CNN
+F 1 "GND" H 9155 5727 50  0000 C CNN
+F 2 "" H 9150 5900 50  0001 C CNN
+F 3 "" H 9150 5900 50  0001 C CNN
+	1    9150 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x12 J?
+U 1 1 5EF01CAE
+P 9500 3450
+AR Path="/5EF01CAE" Ref="J?"  Part="1" 
+AR Path="/5EED5E8D/5EF01CAE" Ref="J203"  Part="1" 
+F 0 "J203" H 9450 2700 50  0000 L CNN
+F 1 "Conn_01x12" H 9450 2600 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 9500 3450 50  0001 C CNN
+F 3 "~" H 9500 3450 50  0001 C CNN
+	1    9500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4050 9300 4050
+Wire Wire Line
+	9150 4100 9150 4050
+Wire Wire Line
+	9050 3850 9300 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5EF01CBA
+P 9150 4100
+AR Path="/5EF01CBA" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5EF01CBA" Ref="#PWR0220"  Part="1" 
+F 0 "#PWR0220" H 9150 3850 50  0001 C CNN
+F 1 "GND" H 9155 3927 50  0000 C CNN
+F 2 "" H 9150 4100 50  0001 C CNN
+F 3 "" H 9150 4100 50  0001 C CNN
+	1    9150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EF01CC0
+P 9050 3850
+AR Path="/5EF01CC0" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5EF01CC0" Ref="#PWR0218"  Part="1" 
+F 0 "#PWR0218" H 9050 3700 50  0001 C CNN
+F 1 "+5V" V 9050 4100 50  0000 C CNN
+F 2 "" H 9050 3850 50  0001 C CNN
+F 3 "" H 9050 3850 50  0001 C CNN
+	1    9050 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EF01CC6
+P 9050 3950
+AR Path="/5EF01CC6" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5EF01CC6" Ref="#PWR0219"  Part="1" 
+F 0 "#PWR0219" H 9050 3800 50  0001 C CNN
+F 1 "+3.3V" V 9050 4200 50  0000 C CNN
+F 2 "" H 9050 3950 50  0001 C CNN
+F 3 "" H 9050 3950 50  0001 C CNN
+	1    9050 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 5650 9300 5650
+Wire Wire Line
+	9300 5550 8800 5550
+Wire Wire Line
+	8800 5450 9300 5450
+Wire Wire Line
+	9300 5350 8800 5350
+Wire Wire Line
+	8800 5250 9300 5250
+Wire Wire Line
+	8800 5150 9300 5150
+Wire Wire Line
+	9300 5050 8800 5050
+Wire Wire Line
+	8800 4950 9300 4950
+Wire Wire Line
+	9300 4850 8800 4850
+Wire Wire Line
+	8800 4750 9300 4750
+Wire Wire Line
+	8900 3750 9300 3750
+Text Label 8800 4950 0    50   ~ 0
+SENSOR_VP
+Wire Wire Line
+	8900 3650 9300 3650
+Wire Wire Line
+	8900 3550 9300 3550
+Wire Wire Line
+	8900 3450 9300 3450
+Wire Wire Line
+	8900 3350 9300 3350
+Wire Wire Line
+	8900 3250 9300 3250
+Wire Wire Line
+	8900 3150 9300 3150
+Wire Wire Line
+	8900 3050 9300 3050
+Text Label 8800 5250 0    50   ~ 0
+GPIO35
+Text Label 8800 5150 0    50   ~ 0
+GPIO34
+Text Label 8800 5450 0    50   ~ 0
+GPIO33
+Text Label 8800 5350 0    50   ~ 0
+GPIO32
+Text Label 8800 5650 0    50   ~ 0
+GPIO26
+Text Label 8800 5550 0    50   ~ 0
+GPIO25
+Text Label 8800 4850 0    50   ~ 0
+GPIO23
+Text Label 8800 4750 0    50   ~ 0
+GPIO22
+Text Label 8900 2950 0    50   ~ 0
+GPIO21
+Text Label 8900 3050 0    50   ~ 0
+GPIO17
+Text Label 8900 3150 0    50   ~ 0
+GPIO16
+Text Label 8900 3550 0    50   ~ 0
+GPIO15
+Text Label 8900 3650 0    50   ~ 0
+GPIO13
+Text Label 8900 3750 0    50   ~ 0
+GPIO12
+Text Label 8900 3250 0    50   ~ 0
+GPIO4
+Text Label 8900 3450 0    50   ~ 0
+GPIO2
+Text Label 8900 3350 0    50   ~ 0
+GPIO0
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 5EF01CF2
+P 9500 2300
+AR Path="/5EF01CF2" Ref="J?"  Part="1" 
+AR Path="/5EED5E8D/5EF01CF2" Ref="J202"  Part="1" 
+F 0 "J202" H 9580 2292 50  0000 L CNN
+F 1 "Conn_01x06" H 9580 2201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9500 2300 50  0001 C CNN
+F 3 "~" H 9500 2300 50  0001 C CNN
+	1    9500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EF01CF8
+P 8100 1500
+AR Path="/5EF01CF8" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5EF01CF8" Ref="#PWR0214"  Part="1" 
+F 0 "#PWR0214" H 8100 1350 50  0001 C CNN
+F 1 "+3.3V" H 8115 1673 50  0000 C CNN
+F 2 "" H 8100 1500 50  0001 C CNN
+F 3 "" H 8100 1500 50  0001 C CNN
+	1    8100 1500
+	1    0    0    -1  
+$EndComp
+Text Label 5900 2050 0    50   ~ 0
+LORA_RST
+Text Label 5900 2250 0    50   ~ 0
+LORA_SS
+Text Label 5900 2550 0    50   ~ 0
+LORA_MOSI
+Text Label 5900 2450 0    50   ~ 0
+LORA_MISO
+Text Label 5900 2350 0    50   ~ 0
+LORA_SCK
+Entry Wire Line
+	8800 3650 8900 3750
+Entry Wire Line
+	8800 3550 8900 3650
+Entry Wire Line
+	8800 3450 8900 3550
+Entry Wire Line
+	8800 3350 8900 3450
+Entry Wire Line
+	8800 3250 8900 3350
+Entry Wire Line
+	8800 3150 8900 3250
+Entry Wire Line
+	8800 3050 8900 3150
+Entry Wire Line
+	8800 2950 8900 3050
+Entry Wire Line
+	8800 2850 8900 2950
+Wire Wire Line
+	8900 2950 9300 2950
+Entry Bus Bus
+	8700 3750 8800 3650
+Entry Wire Line
+	6300 3550 6400 3650
+Entry Wire Line
+	6300 3450 6400 3550
+Entry Wire Line
+	6300 3350 6400 3450
+Entry Wire Line
+	6300 3250 6400 3350
+Entry Wire Line
+	6300 3150 6400 3250
+Entry Wire Line
+	6300 3050 6400 3150
+Entry Wire Line
+	6300 2950 6400 3050
+Entry Wire Line
+	6300 2850 6400 2950
+Entry Wire Line
+	6300 2750 6400 2850
+Wire Wire Line
+	5800 2850 6300 2850
+Wire Wire Line
+	5800 2750 6300 2750
+Wire Wire Line
+	5800 2950 6300 2950
+Wire Wire Line
+	5800 3050 6300 3050
+Wire Wire Line
+	5800 3150 6300 3150
+Wire Wire Line
+	5800 3250 6300 3250
+Wire Wire Line
+	5800 3350 6300 3350
+Wire Wire Line
+	5800 3450 6300 3450
+Wire Wire Line
+	5800 3550 6300 3550
+Entry Bus Bus
+	6400 3650 6500 3750
+Wire Bus Line
+	8700 3750 6500 3750
+Wire Wire Line
+	9050 3950 9300 3950
+Entry Wire Line
+	6300 3650 6400 3750
+Entry Wire Line
+	6300 3750 6400 3850
+Entry Wire Line
+	6300 3850 6400 3950
+Entry Wire Line
+	6300 3950 6400 4050
+Entry Wire Line
+	6300 4050 6400 4150
+Entry Wire Line
+	6300 4150 6400 4250
+Entry Wire Line
+	6300 4250 6400 4350
+Entry Wire Line
+	6300 4350 6400 4450
+Entry Bus Bus
+	6400 4450 6500 4550
+Entry Wire Line
+	8700 5350 8800 5450
+Entry Wire Line
+	8700 5250 8800 5350
+Entry Wire Line
+	8700 5150 8800 5250
+Entry Wire Line
+	8700 5050 8800 5150
+Entry Wire Line
+	8700 4950 8800 5050
+Entry Wire Line
+	8700 4850 8800 4950
+Entry Wire Line
+	8700 4750 8800 4850
+Entry Wire Line
+	8700 4650 8800 4750
+Entry Bus Bus
+	8600 4550 8700 4650
+Wire Bus Line
+	6500 4550 8600 4550
+Wire Wire Line
+	5800 4350 6300 4350
+Wire Wire Line
+	5800 4250 6300 4250
+Wire Wire Line
+	5800 4150 6300 4150
+Wire Wire Line
+	5800 4050 6300 4050
+Wire Wire Line
+	5800 3950 6300 3950
+Wire Wire Line
+	5800 3850 6300 3850
+Wire Wire Line
+	5800 3750 6300 3750
+Wire Wire Line
+	5800 3650 6300 3650
+Text Label 8800 5050 0    50   ~ 0
+SENSOR_VN
+Wire Wire Line
+	8600 2400 9300 2400
+Wire Wire Line
+	8600 2300 9300 2300
+Wire Wire Line
+	8600 2200 9300 2200
+Wire Wire Line
+	8600 2100 9300 2100
+Wire Wire Line
+	8100 1550 8100 1500
+Wire Wire Line
+	8600 2600 9300 2600
+Wire Wire Line
+	8600 2500 9300 2500
+$Comp
+L tp_abbate:Ai-Thinker-Ra-01 U?
+U 1 1 5EF01C57
+P 8100 2350
+AR Path="/5EF01C57" Ref="U?"  Part="1" 
+AR Path="/5EED5E8D/5EF01C57" Ref="U202"  Part="1" 
+F 0 "U202" H 7900 3100 50  0000 C CNN
+F 1 "Ai-Thinker-Ra-01" H 7600 3000 50  0000 C CNN
+F 2 "RF_Module:Ai-Thinker-Ra-01-LoRa" H 9100 1950 50  0001 C CNN
+F 3 "https://mikroelectron.com/Product/10KM-433M-LORA-LONG-RANGE-WIRELESS-MODULE-RA-01" H 8200 3050 50  0001 C CNN
+F 4 "Ai-Thinker" H 8100 2350 50  0001 C CNN "Manf"
+F 5 "Ra-01" H 8100 2350 50  0001 C CNN "Manf#"
+	1    8100 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2550 7600 2550
+Wire Wire Line
+	5800 2450 7600 2450
+Wire Wire Line
+	5800 2350 7600 2350
+Wire Wire Line
+	5800 2250 7600 2250
+Wire Wire Line
+	5800 2050 7600 2050
+Wire Wire Line
+	8700 1650 8700 1850
+Wire Wire Line
+	8600 1850 8700 1850
+Text Notes 2000 4000 0    50   ~ 0
+Flash button: Driving GPIO0 LOW while\nreset, enters Flash mode 
+$Comp
+L tp_abbate:2N7002 Q?
+U 1 1 5F0A4695
+P 3150 2350
+AR Path="/5F0A4695" Ref="Q?"  Part="1" 
+AR Path="/5EED5E8D/5F0A4695" Ref="Q202"  Part="1" 
+F 0 "Q202" H 3354 2396 50  0000 L CNN
+F 1 "2N7002DW" H 3354 2305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 3350 2275 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30120.pdf" H 3150 2350 50  0001 L CNN
+F 4 "MOSFET 2N-CH 60V 0.23A SOT-363" H 3150 2350 50  0001 C CNN "Desc"
+F 5 "2N7002DW-FDICT-ND" H 3150 2350 50  0001 C CNN "Digikey#"
+F 6 "Diodes Incorporated" H 3150 2350 50  0001 C CNN "Manf"
+	1    3150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L tp_abbate:2N7002 Q?
+U 2 1 5F0A469C
+P 3150 3150
+AR Path="/5F0A469C" Ref="Q?"  Part="2" 
+AR Path="/5EED5E8D/5F0A469C" Ref="Q202"  Part="2" 
+F 0 "Q202" H 3354 3104 50  0000 L CNN
+F 1 "2N7002DW" H 3354 3195 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 3350 3075 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30120.pdf" H 3150 3150 50  0001 L CNN
+F 4 "MOSFET 2N-CH 60V 0.23A SOT-363" H 3150 3150 50  0001 C CNN "Desc"
+F 5 "2N7002DW-FDICT-ND" H 3150 3150 50  0001 C CNN "Digikey#"
+F 6 "Diodes Incorporated" H 3150 3150 50  0001 C CNN "Manf"
+	2    3150 3150
+	1    0    0    1   
+$EndComp
+Wire Notes Line
+	1800 3750 2000 3900
+Wire Notes Line
+	1850 1700 2250 1450
+Text Notes 2250 1450 0    50   ~ 0
+Reset button
+Wire Wire Line
+	2100 3700 3250 3700
+Connection ~ 2100 3700
+Text Notes 1050 950  0    100  ~ 20
+Auto and Manual reset
+Text Label 2000 1750 0    50   ~ 0
+CHIP_PU
+Text Label 2250 3700 0    50   ~ 0
+GPIO0
+Wire Wire Line
+	2100 3200 2100 3150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F0A46AD
+P 2100 3150
+AR Path="/5F0A46AD" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5F0A46AD" Ref="#PWR0203"  Part="1" 
+F 0 "#PWR0203" H 2100 3000 50  0001 C CNN
+F 1 "+3.3V" H 2115 3323 50  0000 C CNN
+F 2 "" H 2100 3150 50  0001 C CNN
+F 3 "" H 2100 3150 50  0001 C CNN
+	1    2100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F0A46B3
+P 1700 3700
+AR Path="/5F0A46B3" Ref="SW?"  Part="1" 
+AR Path="/5EED5E8D/5F0A46B3" Ref="SW202"  Part="1" 
+F 0 "SW202" H 1700 3985 50  0000 C CNN
+F 1 "SW_Push" H 1700 3894 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 1700 3900 50  0001 C CNN
+F 3 "~" H 1700 3900 50  0001 C CNN
+F 4 "Tactile Switch SPST-NO Top Actuated Surface Mount" H 1700 3700 50  0001 C CNN "Desc"
+F 5 "CKN10384CT-ND" H 1700 3700 50  0001 C CNN "Digikey#"
+F 6 "C&K" H 1700 3700 50  0001 C CNN "Manf"
+	1    1700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3700 2100 3700
+$Comp
+L Device:R R?
+U 1 1 5F0A46BA
+P 2100 3350
+AR Path="/5F0A46BA" Ref="R?"  Part="1" 
+AR Path="/5EED5E8D/5F0A46BA" Ref="R202"  Part="1" 
+F 0 "R202" H 2030 3304 50  0000 R CNN
+F 1 "10k" H 2030 3395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 3350 50  0001 C CNN
+F 3 "~" H 2100 3350 50  0001 C CNN
+	1    2100 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1850 1500 1750
+$Comp
+L power:GND #PWR?
+U 1 1 5F0A46C1
+P 1500 1850
+AR Path="/5F0A46C1" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5F0A46C1" Ref="#PWR0201"  Part="1" 
+F 0 "#PWR0201" H 1500 1600 50  0001 C CNN
+F 1 "GND" H 1505 1677 50  0000 C CNN
+F 2 "" H 1500 1850 50  0001 C CNN
+F 3 "" H 1500 1850 50  0001 C CNN
+	1    1500 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3800 1500 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5F0A46C8
+P 1500 3800
+AR Path="/5F0A46C8" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5F0A46C8" Ref="#PWR0202"  Part="1" 
+F 0 "#PWR0202" H 1500 3550 50  0001 C CNN
+F 1 "GND" H 1505 3627 50  0000 C CNN
+F 2 "" H 1500 3800 50  0001 C CNN
+F 3 "" H 1500 3800 50  0001 C CNN
+	1    1500 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2750 2600 2350
+Wire Wire Line
+	3250 2750 2600 2750
+Wire Wire Line
+	3250 2950 3250 2750
+Wire Wire Line
+	2700 3150 2950 3150
+Connection ~ 2700 3150
+Wire Wire Line
+	3250 2650 3250 2550
+Wire Wire Line
+	2700 2650 3250 2650
+Wire Wire Line
+	2700 3150 2700 2650
+Wire Wire Line
+	2500 3150 2700 3150
+Wire Wire Line
+	1900 1750 2600 1750
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F0A46DD
+P 1700 1750
+AR Path="/5F0A46DD" Ref="SW?"  Part="1" 
+AR Path="/5EED5E8D/5F0A46DD" Ref="SW201"  Part="1" 
+F 0 "SW201" H 1700 2035 50  0000 C CNN
+F 1 "SW_Push" H 1700 1944 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 1700 1950 50  0001 C CNN
+F 3 "~" H 1700 1950 50  0001 C CNN
+F 4 "Tactile Switch SPST-NO Top Actuated Surface Mount" H 1700 1750 50  0001 C CNN "Desc"
+F 5 "CKN10384CT-ND" H 1700 1750 50  0001 C CNN "Digikey#"
+F 6 "C&K" H 1700 1750 50  0001 C CNN "Manf"
+	1    1700 1750
+	1    0    0    -1  
+$EndComp
+Text HLabel 2500 2350 0    50   Input ~ 0
+DTR
+Text HLabel 2500 3150 0    50   Input ~ 0
+RTS
+Text HLabel 6500 1750 2    50   Input ~ 0
+ESP_TXD
+Text HLabel 6500 1850 2    50   Input ~ 0
+ESP_RXD
+Wire Wire Line
+	5800 1850 6500 1850
+Connection ~ 3250 1750
+Wire Wire Line
+	3250 1750 4000 1750
+Wire Wire Line
+	2500 2350 2600 2350
+Wire Wire Line
+	3250 1750 3250 2150
+Connection ~ 2600 2350
+Wire Wire Line
+	2600 2350 2950 2350
+Wire Wire Line
+	2600 1850 2600 1750
+Connection ~ 2600 1750
+Wire Wire Line
+	2600 1750 3250 1750
+Wire Wire Line
+	2600 2150 2600 2350
+Wire Wire Line
+	3250 3350 3250 3700
+Wire Wire Line
+	2100 3500 2100 3700
+Text Notes 1050 1250 0    50   ~ 0
+Boot Mode Configuration:\n- If DTR is LOW, toggling RTS from HIGH to LOW resets to run mode.\n- If RTS is HIGH, toggling DTR from LOW to HIGH resets to bootloader
+Text Notes 4450 5850 0    100  ~ 20
+Decoupling Capacitors
+Text Notes 1350 5000 0    100  ~ 20
+Battery level measurement
+Wire Wire Line
+	2000 6450 2150 6450
+Text Label 2950 5800 0    50   ~ 0
+GPIO13
+Wire Wire Line
+	1350 6450 1700 6450
+Text Label 1350 6450 0    50   ~ 0
+GPIO21
+Wire Wire Line
+	2450 5450 2450 5350
+Wire Wire Line
+	2450 6650 2450 6800
+Wire Wire Line
+	2450 6250 2450 6150
+$Comp
+L power:GND #PWR?
+U 1 1 5F222F79
+P 2450 6800
+AR Path="/5F222F79" Ref="#PWR?"  Part="1" 
+AR Path="/5EED5E8D/5F222F79" Ref="#PWR0205"  Part="1" 
+F 0 "#PWR0205" H 2450 6550 50  0001 C CNN
+F 1 "GND" H 2455 6627 50  0000 C CNN
+F 2 "" H 2450 6800 50  0001 C CNN
+F 3 "" H 2450 6800 50  0001 C CNN
+	1    2450 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5800 2450 5750
+Connection ~ 2450 5800
+Wire Wire Line
+	2450 5800 2950 5800
+Wire Wire Line
+	2450 5850 2450 5800
+$Comp
+L Device:R R?
+U 1 1 5F222F83
+P 1850 6450
+AR Path="/5F222F83" Ref="R?"  Part="1" 
+AR Path="/5EED5E8D/5F222F83" Ref="R201"  Part="1" 
+F 0 "R201" V 2050 6550 50  0000 R CNN
+F 1 "1k" V 1950 6550 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1780 6450 50  0001 C CNN
+F 3 "~" H 1850 6450 50  0001 C CNN
+	1    1850 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F222F89
+P 2450 6000
+AR Path="/5F222F89" Ref="R?"  Part="1" 
+AR Path="/5EED5E8D/5F222F89" Ref="R204"  Part="1" 
+F 0 "R204" H 2380 5954 50  0000 R CNN
+F 1 "100k" H 2380 6045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2380 6000 50  0001 C CNN
+F 3 "~" H 2450 6000 50  0001 C CNN
+	1    2450 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F222F8F
+P 2450 5600
+AR Path="/5F222F8F" Ref="R?"  Part="1" 
+AR Path="/5EED5E8D/5F222F8F" Ref="R203"  Part="1" 
+F 0 "R203" H 2380 5554 50  0000 R CNN
+F 1 "220k" H 2380 5645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2380 5600 50  0001 C CNN
+F 3 "~" H 2450 5600 50  0001 C CNN
+	1    2450 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:AO3401A Q?
+U 1 1 5F222F95
+P 2350 6450
+AR Path="/5F222F95" Ref="Q?"  Part="1" 
+AR Path="/5EED5E8D/5F222F95" Ref="Q201"  Part="1" 
+F 0 "Q201" H 2650 6350 50  0000 C CNN
+F 1 "AO3401A" H 2750 6450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2550 6375 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 2350 6450 50  0001 L CNN
+F 4 "MOSFET P-CH 30V 4A SOT23" H 2350 6450 50  0001 C CNN "Desc"
+F 5 "785-1001-6-ND" H 2350 6450 50  0001 C CNN "Digikey#"
+F 6 "Alpha & Omega Semiconductor Inc." H 2350 6450 50  0001 C CNN "Manf"
+	1    2350 6450
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+BATT #PWR0204
+U 1 1 5F22FDCF
+P 2450 5350
+F 0 "#PWR0204" H 2450 5200 50  0001 C CNN
+F 1 "+BATT" H 2465 5523 50  0000 C CNN
+F 2 "" H 2450 5350 50  0001 C CNN
+F 3 "" H 2450 5350 50  0001 C CNN
+	1    2450 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1750 6500 1750
+Wire Bus Line
+	6400 3750 6400 4450
+Wire Bus Line
+	8700 4650 8700 5550
+Wire Bus Line
+	8800 2850 8800 3650
+Wire Bus Line
+	6400 2750 6400 3650
+Entry Wire Line
+	8700 5550 8800 5650
+Entry Wire Line
+	8700 5450 8800 5550
+$EndSCHEMATC
