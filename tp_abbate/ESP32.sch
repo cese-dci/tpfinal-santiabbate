@@ -518,31 +518,18 @@ Text Label 8900 3050 0    50   ~ 0
 GPIO17
 Text Label 8900 3150 0    50   ~ 0
 GPIO16
-Text Label 8900 3550 0    50   ~ 0
-GPIO15
 Text Label 8900 3650 0    50   ~ 0
-GPIO13
+GPIO15
 Text Label 8900 3750 0    50   ~ 0
+GPIO13
+Text Label 8900 3450 0    50   ~ 0
 GPIO12
 Text Label 8900 3250 0    50   ~ 0
 GPIO4
-Text Label 8900 3450 0    50   ~ 0
+Text Label 8900 3550 0    50   ~ 0
 GPIO2
 Text Label 8900 3350 0    50   ~ 0
 GPIO0
-$Comp
-L Connector_Generic:Conn_01x06 J?
-U 1 1 5EF01CF2
-P 9500 2300
-AR Path="/5EF01CF2" Ref="J?"  Part="1" 
-AR Path="/5EED5E8D/5EF01CF2" Ref="J202"  Part="1" 
-F 0 "J202" H 9580 2292 50  0000 L CNN
-F 1 "Conn_01x06" H 9580 2201 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9500 2300 50  0001 C CNN
-F 3 "~" H 9500 2300 50  0001 C CNN
-	1    9500 2300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5EF01CF8
@@ -696,10 +683,6 @@ Wire Wire Line
 	8600 2100 9300 2100
 Wire Wire Line
 	8100 1550 8100 1500
-Wire Wire Line
-	8600 2600 9300 2600
-Wire Wire Line
-	8600 2500 9300 2500
 $Comp
 L tp_abbate:Ai-Thinker-Ra-01 U?
 U 1 1 5EF01C57
@@ -1028,6 +1011,23 @@ F 3 "" H 2450 5350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5800 1750 6500 1750
+Entry Wire Line
+	8700 5550 8800 5650
+Entry Wire Line
+	8700 5450 8800 5550
+$Comp
+L Connector_Generic:Conn_01x04 J202
+U 1 1 5EF6E39D
+P 9500 2200
+F 0 "J202" H 9580 2192 50  0000 L CNN
+F 1 "Conn_01x04" H 9580 2101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9500 2200 50  0001 C CNN
+F 3 "~" H 9500 2200 50  0001 C CNN
+	1    9500 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8600 2600
+NoConn ~ 8600 2500
 Wire Bus Line
 	6400 3750 6400 4450
 Wire Bus Line
@@ -1036,8 +1036,4 @@ Wire Bus Line
 	8800 2850 8800 3650
 Wire Bus Line
 	6400 2750 6400 3650
-Entry Wire Line
-	8700 5550 8800 5650
-Entry Wire Line
-	8700 5450 8800 5550
 $EndSCHEMATC

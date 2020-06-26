@@ -883,4 +883,39 @@ Wire Wire Line
 	5150 5650 7350 5650
 Wire Wire Line
 	5150 5550 7150 5550
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5EF2822C
+P 10150 1050
+F 0 "FID1" H 10235 1096 50  0000 L CNN
+F 1 "Fiducial" H 10235 1005 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 10150 1050 50  0001 C CNN
+F 3 "~" H 10150 1050 50  0001 C CNN
+	1    10150 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5EF29081
+P 10150 1300
+F 0 "FID2" H 10235 1346 50  0000 L CNN
+F 1 "Fiducial" H 10235 1255 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 10150 1300 50  0001 C CNN
+F 3 "~" H 10150 1300 50  0001 C CNN
+	1    10150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5EF29733
+P 10150 1550
+F 0 "FID3" H 10235 1596 50  0000 L CNN
+F 1 "Fiducial" H 10235 1505 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1.5mm" H 10150 1550 50  0001 C CNN
+F 3 "~" H 10150 1550 50  0001 C CNN
+	1    10150 1550
+	1    0    0    -1  
+$EndComp
+Text Notes 9850 1900 0    50   ~ 0
+Place on Front Layer.\nBack Layer will be hand soldered.
 $EndSCHEMATC
