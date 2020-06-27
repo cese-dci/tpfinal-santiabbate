@@ -1,4 +1,3 @@
 (fp_lib_table
-  (lib (name U.FL)(type KiCad)(uri /mnt/Archivos/cese/DCI/tp/tp_abbate/models.pretty)(options "")(descr ""))
   (lib (name tp_abbate)(type KiCad)(uri ${KIPRJMOD}/libraries/tp_abbate.pretty)(options "")(descr ""))
 )

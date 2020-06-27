@@ -723,20 +723,6 @@ F 3 "" H 3150 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
-U 1 1 5ED9725D
-P 2850 6000
-F 0 "C2" H 2900 5800 50  0000 L CNN
-F 1 "1uF" H 2900 5900 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 2888 5850 50  0001 C CNN
-F 3 "~" H 2850 6000 50  0001 C CNN
-F 4 "1µF Molded Tantalum Capacitors 25V 1206 (3216 Metric)" H 2850 6000 50  0001 C CNN "Desc"
-F 5 "511-TCA1E105M8RCT-ND" H 2850 6000 50  0001 C CNN "Digikey#"
-F 6 "Rohm Semiconductor" H 2850 6000 50  0001 C CNN "Manf"
-	1    2850 6000
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C C3
 U 1 1 5ED96C3D
 P 3150 6000
@@ -918,4 +904,18 @@ F 3 "~" H 9950 1600 50  0001 C CNN
 $EndComp
 Text Notes 9650 1950 0    50   ~ 0
 Place on Front Layer.\nBack Layer will be hand soldered.
+$Comp
+L Device:CP1 C2
+U 1 1 5EF72A03
+P 2850 6000
+F 0 "C2" H 2600 6200 50  0000 L CNN
+F 1 "1uF" H 2600 6100 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 2850 6000 50  0001 C CNN
+F 3 "~" H 2850 6000 50  0001 C CNN
+F 4 "1µF Molded Tantalum Capacitors 25V 1206 (3216 Metric)" H 2850 6000 50  0001 C CNN "Desc"
+F 5 "511-TCA1E105M8RCT-ND" H 2850 6000 50  0001 C CNN "Digikey#"
+F 6 "Rohm Semiconductor" H 2850 6000 50  0001 C CNN "Manf"
+	1    2850 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
