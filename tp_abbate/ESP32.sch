@@ -266,8 +266,6 @@ F 3 "" H 8100 3050 50  0001 C CNN
 $EndComp
 Text Notes 9850 3600 0    100  ~ 20
 GPIOs Headers
-Text Notes 9300 1750 0    50   ~ 0
-Close to\nboard edge
 Wire Wire Line
 	8900 1750 9050 1750
 Wire Wire Line
@@ -1036,4 +1034,6 @@ Wire Bus Line
 	8800 2850 8800 3650
 Wire Bus Line
 	6400 2750 6400 3650
+Text Notes 9300 1750 0    50   ~ 0
+Close to U5\npin N°1
 $EndSCHEMATC

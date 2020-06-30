@@ -918,4 +918,50 @@ F 6 "Rohm Semiconductor" H 2850 6000 50  0001 C CNN "Manf"
 	1    2850 6000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EFBB7A6
+P 8500 1100
+F 0 "H1" H 8600 1100 50  0000 L CNN
+F 1 "MountingHole" H 8600 1055 50  0001 L CNN
+F 2 "tp_abbate:MountingHole_1.8mm_M3" H 8500 1100 50  0001 C CNN
+F 3 "~" H 8500 1100 50  0001 C CNN
+	1    8500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EFBC4FA
+P 8900 1100
+F 0 "H2" H 9000 1100 50  0000 L CNN
+F 1 "MountingHole" H 9000 1055 50  0001 L CNN
+F 2 "tp_abbate:MountingHole_1.8mm_M3" H 8900 1100 50  0001 C CNN
+F 3 "~" H 8900 1100 50  0001 C CNN
+	1    8900 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EFBC92C
+P 8500 1350
+F 0 "H3" H 8600 1350 50  0000 L CNN
+F 1 "MountingHole" H 8600 1305 50  0001 L CNN
+F 2 "tp_abbate:MountingHole_1.8mm_M3" H 8500 1350 50  0001 C CNN
+F 3 "~" H 8500 1350 50  0001 C CNN
+	1    8500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EFBCDE8
+P 8900 1350
+F 0 "H4" H 9000 1350 50  0000 L CNN
+F 1 "MountingHole" H 9000 1305 50  0001 L CNN
+F 2 "tp_abbate:MountingHole_1.8mm_M3" H 8900 1350 50  0001 C CNN
+F 3 "~" H 8900 1350 50  0001 C CNN
+	1    8900 1350
+	1    0    0    -1  
+$EndComp
+Text Notes 8450 1700 0    50   ~ 0
+Mounting holes.\nDia. 3.2 mm
 $EndSCHEMATC
